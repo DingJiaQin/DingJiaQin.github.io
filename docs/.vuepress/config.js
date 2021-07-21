@@ -6,7 +6,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/photo.jpg' }],
     ['link', { rel: 'apple-touch-icon', href: '/photo.jpg' }],
   ],
-  base: '/', // 这是部署到github相关的配置
+  base: '.', // 这是部署到github相关的配置
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
@@ -20,5 +20,5 @@ module.exports = {
     sidebarDepth: 2, // 侧边栏显示2级
   },
   serviceWorker: true, // 是否开启 PWA
-  dest: './docs'
+  // dest: './docs'
 };
