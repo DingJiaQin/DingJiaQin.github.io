@@ -20,5 +20,5 @@ module.exports = {
     sidebarDepth: 2, // 侧边栏显示2级
   },
   serviceWorker: true, // 是否开启 PWA
-  // dest: public
+  dest: './vuepress/dist'
 };
