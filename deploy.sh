@@ -1,12 +1,23 @@
+# #!/usr/bin/env sh
+
+# # 生成静态文件
+# yarn docs:build
+
+# rm -rf build.tar
+# tar -zcvf build.tar ./docs/.vuepress/dist
+# sshpass -p $PASSWORD scp -o StrictHostKeyChecking=no ./build.tar root@47.107.225.230:/var/www/html
+# sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no root@47.107.225.230
+# cd /var/www/html
+# tar -zxvf build.tar
+# mv ./docs/.vuepress/dist ./html
+# exit
+
 #!/usr/bin/env sh
 
 # 生成静态文件
-yarn docs:build
+# yarn docs:build
 
-rm -rf build.tar
-tar -zcvf build.tar ./docs/.vuepress/dist
-sshpass -p $PASSWORD scp -o StrictHostKeyChecking=no ./build.tar root@47.107.225.230:/var/www/html
-sshpass -p $PASSWORD ssh -o StrictHostKeyChecking=no root@47.107.225.230
-cd /var/www/html
-tar -zxvf build.tar
-mv ./docs/.vuepress/dist ./html
+# rm -rf build.tar
+# tar -zcvf build.tar ./docs/.vuepress/dist
+scp -o StrictHostKeyChecking=no ./build.tar root@47.107.225.230:/var/www/
+ssh -o StrictHostKeyChecking=no root@47.107.225.230 "cd /var/www/ && rm -rf docs html && tar -zxvf build.tar  && mv ./docs/.vuepress/dist ./html"

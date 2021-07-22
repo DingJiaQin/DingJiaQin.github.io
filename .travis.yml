@@ -12,7 +12,6 @@ before_install:
 install:
   - yarn global add gitbook-cli # 安装编译工具
 script:
-  - yarn docs:build
   - sh deploy.sh
 deploy:
   provider: pages
