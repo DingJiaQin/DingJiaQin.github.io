@@ -9,4 +9,4 @@
 :tada: :100: :bamboo: :gift_heart: :fire: :relieved: :smile:
 
 # 我的头像
-![图片](http://47.107.225.230/myLogo.jpg)
+![图片](http://47.107.225.230/public/myLogo.jpg)
