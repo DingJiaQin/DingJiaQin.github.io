@@ -1,7 +1,7 @@
 {
   "name": "vue-press",
   "scripts": {
-    "docs:dev": "vuepress dev docs",
+    "docs:dev": "vuepress dev docs cross-env NODE_ENV=dev",
     "docs:build": "vuepress build docs"
   },
   "version": "1.0.0",
@@ -11,6 +11,7 @@
     "vuepress": "^1.8.2"
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "travis": "^0.1.1"
   }
 }
