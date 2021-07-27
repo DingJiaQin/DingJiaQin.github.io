@@ -1,6 +1,3 @@
-function proxyUrl(baseUrl) {
-  return process.env.NODE_ENV === 'dev' ? baseUrl : '/myblog' + baseUrl;
-};
 module.exports = {
   title: '村长',
   description: '我的个人网站',
