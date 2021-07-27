@@ -11,13 +11,38 @@ module.exports = {
     lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
-    nav:[ // 导航栏配置
-      {text: '前端基础', link: '/accumulate/' },
-      {text: '算法题库', link: '/algorithm/'},
-      {text: '微博', link: 'https://baidu.com'}      
-    ],
-    sidebar: 'auto', // 侧边栏配置
+    // nav:[ // 导航栏配置
+    //   {text: '前端基础', link: '/accumulate/' },
+    //   {text: '算法题库', link: '/algorithm/'},
+    //   {text: '微博', link: 'https://baidu.com'}      
+    // ],
+    // sidebar: 'auto', // 侧边栏配置
+    // sidebar: [
+    //   '/',
+    //   '/page-a',
+    //   ['/page-b', 'Explicit link text']
+    // ]
     sidebarDepth: 2, // 侧边栏显示2级
+    sidebar: {
+      '/foo/': [
+        '',     /* /foo/ */
+        'one',  /* /foo/one.html */
+        'two'   /* /foo/two.html */
+      ],
+
+      '/bar/': [
+        '',      /* /bar/ */
+        'three', /* /bar/three.html */
+        'four'   /* /bar/four.html */
+      ],
+
+      // fallback
+      '/': [
+        '',        /* / */
+        'contact', /* /contact.html */
+        'about'    /* /about.html */
+      ]
+    }
   },
   serviceWorker: true, // 是否开启 PWA
   // dest: './docs'
