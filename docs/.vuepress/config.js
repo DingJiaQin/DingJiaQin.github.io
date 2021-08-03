@@ -8,7 +8,7 @@ module.exports = {
   ],
   base: process.env.NODE_ENV === 'dev' ? '/' : '.', // 这是部署到github相关的配置
   markdown: {
-    lineNumbers: false // 代码块显示行号1
+    lineNumbers: false // 代码块显示行号
   },
   themeConfig: {
     // nav:[ // 导航栏配置
