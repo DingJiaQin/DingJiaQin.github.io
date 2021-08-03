@@ -24,20 +24,20 @@ module.exports = {
     // ]
     sidebarDepth: 2, // 侧边栏显示2级
     sidebar: {
-      '/foo/': [
+      '/myblog/foo/': [
         '',     /* /foo/ */
         'one',  /* /foo/one.html */
         'two'   /* /foo/two.html */
       ],
 
-      '/bar/': [
+      '/myblog/bar/': [
         '',      /* /bar/ */
         'three', /* /bar/three.html */
         'four'   /* /bar/four.html */
       ],
 
       // fallback
-      '/': [
+      '/myblog/': [
         '',        /* / */
         'contact', /* /contact.html */
         'about'    /* /about.html */
