@@ -1,0 +1,17 @@
+{
+  "name": "vue-press",
+  "scripts": {
+    "docs:dev": "cross-env NODE_ENV=dev vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "travis": "^0.1.1"
+  }
+}
