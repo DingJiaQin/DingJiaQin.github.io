@@ -6,7 +6,7 @@ module.exports = {
     ['link', { rel: 'manifest', href: '/photo.jpg' }],
     ['link', { rel: 'apple-touch-icon', href: '/photo.jpg' }],
   ],
-  base: process.env.NODE_ENV === 'dev' ? '/' : './', // 这是部署到github相关的配置
+  base: process.env.NODE_ENV === 'dev' ? '/' : '.', // 这是部署到github相关的配置
   markdown: {
     lineNumbers: false // 代码块显示行号
   },
@@ -24,20 +24,20 @@ module.exports = {
     // ]
     sidebarDepth: 2, // 侧边栏显示2级
     sidebar: {
-      '/foo/': [
+      '/myblog/foo/': [
         '',     /* /foo/ */
         'one',  /* /foo/one.html */
         'two'   /* /foo/two.html */
       ],
 
-      '/bar/': [
+      '/myblog/bar/': [
         '',      /* /bar/ */
         'three', /* /bar/three.html */
         'four'   /* /bar/four.html */
       ],
 
       // fallback
-      '/': [
+      '/myblog/': [
         '',        /* / */
         'contact', /* /contact.html */
         'about'    /* /about.html */
